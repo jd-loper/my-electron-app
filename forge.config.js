@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'jd-loper',
+          name: 'my-electron-app',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
