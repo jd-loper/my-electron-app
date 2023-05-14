@@ -131,3 +131,4 @@ dist
 
 # Electron Forge config
 forge.config.js
+package-lock.json
