@@ -3,17 +3,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+.greeting {
+    display: inline-block;
     color: tomato;
-    letter-spacing: 2px;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
+.typing-effect {
+    overflow: hidden;
+    border-right: 0.15em solid indianred;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s steps(12, end) forwards, blink 1s ease-in-out infinite;
 }
 
-.paragraph {
-    display: flex;
-    justify-content: center;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: indianred;
+    }
 }
