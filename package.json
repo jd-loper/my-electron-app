@@ -3,6 +3,10 @@
   "version": "1.1.0",
   "description": "Hello World!",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jd-loper/my-electron-app.git"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -22,6 +26,7 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
+    "my-electron-app": "github:jd-loper/my-electron-app",
     "update-electron-app": "^2.0.1"
   }
 }
